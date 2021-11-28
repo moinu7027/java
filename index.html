@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+            
+        
+
+        <style>
+
+        .calculator{
+            display: flex;
+            max-width: 300px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .calculator button{
+        color: white;
+        flex-basis: 25%;
+        max-width: 25%;
+        border: 1px solid #847d7d;
+        background: #443737;
+        cursor: pointer;
+        border-radius: 3px;
+        height: 36px;
+    
+}
+
+      .calculator input{
+        border-radius:3px;
+        flex-basis: 100%;
+        border: 7px solid #625e5e;
+        background: #180404;
+        max-width: 100%;
+        padding: 5px;
+        color: white;
+        
+    }
+    .calculator button:hover{
+        background: #999;
+    }
+    a{
+        text-decoration: none;
+        border: 1px solid #333;
+        color: white;
+        background: #333;
+       font-size: 22px;
+       margin-bottom: 5px;
+    }
+
+    
+
+
+    </style> 
+
+    <div>
+        <a href="http://127.0.0.1:5500/java.html" type="button">Go to Home</a>
+    </div>
+    <div class="calculator">
+        <input type="text" value="" id="view">
+
+        <button type="button" onclick="one()">1</button>
+        <button type="button" onclick="two()">2</button>
+        <button type="button" onclick="three()">3</button>
+        <button type="button" onclick="four()">4</button>
+        <button type="button" onclick="five()">5</button>
+        <button type="button" onclick="six()">6</button>
+        <button type="button" onclick="seven()">7</button>
+        <button type="button" onclick="eight()">8</button>
+        <button type="button" onclick="nine()">9</button>
+        <button type="button" onclick="zero()">0</button>
+        <button type="button" onclick="add()">+</button>
+        <button type="button" onclick="sub()">-</button>
+        <button type="button" onclick="mult()">*</button>
+        <button type="button" onclick="divide()">/</button>
+        <button type="button" onclick="equal()">=</button>
+        <button type="button" onclick="clr()">c</button>
+       
+    </div>
+        
+
+    <script>
+       
+        function one(){
+            document.getElementById('view').value+=1;
+        }
+        
+       
+        function two(){
+            document.getElementById('view').value=2;
+        }
+        
+       
+        function three(){
+            document.getElementById('view').value+=3;
+        }
+        
+       
+        function four(){
+            document.getElementById('view').value+=4;
+        }
+        
+       
+        function five(){
+            document.getElementById('view').value+=5;
+        }
+        
+       
+        function six(){
+            document.getElementById('view').value+=6;
+        }
+        
+        function seven(){
+            document.getElementById('view').value+=7;
+        }
+        
+        function eight(){
+            document.getElementById('view').value+=8;
+        }
+        
+        function nine(){
+            document.getElementById('view').value+=9;
+        }
+        
+        function zero(){
+            document.getElementById('view').value+=0;
+        }
+        
+        function add(){
+            document.getElementById('view').value+="+";
+        }
+        
+        function sub(){
+            document.getElementById('view').value+="-";
+        }
+        
+        function mult(){
+            document.getElementById('view').value+="*";
+        }value
+        
+        function divide(){
+            document.getElementById('view').value+="/";
+        }
+        
+        function equal(){
+            document.getElementById('view').value = eval(document.getElementById('view').value);
+        }
+        function clr(){
+            document.getElementById('view').value = " ";
+        }
+
+
+    
+        
+    </script>
+     
+</body>
+</html>
